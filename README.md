@@ -13,7 +13,7 @@
 ## Windows
 ### 1. Python
  - Go to [**PYTHON DOWNLOAD PAGE**](https://www.python.org/downloads/release/python-2714/) and search for desired version **at the bottom of page**.
- - **Warning**: DO NOT insta-click on highlighted download button! (it will download the 32-bit version!).
+ - **Warning**: DO NOT insta-click on highlighted download button! (it will download the 32-bit version!)
 
 ### 2. OpenCV
  - Go to [**OPENCV RELEASES PAGE**](https://opencv.org/releases.html) and download preferred version **for Windows**.
@@ -29,11 +29,11 @@ You can also find it by running the Python script below:
 import site
 print site.getsitepackages()
 ```  
-There will be probably 2 paths, but the correct one is the folder containing several other packages. It is usually located at <python_root>/Lib/site-packages
+There will be probably 2 paths, but the correct one is the folder containing several other packages. It is usually located at <python_root>/Lib/site-packages.
 
 ### 3. Install Pip
  - Right click [**THIS FILE**](https://bootstrap.pypa.io/get-pip.py) and **Save File As** get-pip.py.
- - Open a console and run the file above  
+ - Open a console and run the previous file.  
 ```python get-pip.py```
 
 ### 4. Install numpy
@@ -47,9 +47,9 @@ There will be probably 2 paths, but the correct one is the folder containing sev
 
 ### Problems?
 If something goes wrong during cv2 installation, you may have installed it in wrong environment such as:  
- - Another version of Python: Python 2 / Python 3
- - A temporary virtual environment
- - Anaconda environment
+ - Another version of Python: Python 2 / Python 3.
+ - A temporary virtual environment.
+ - Anaconda environment.
 
 ---
 
@@ -69,7 +69,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libp
  - Clone the [**OPENCV SOURCE REPO**](https://github.com/opencv/opencv)  
 ```git clone https://github.com/opencv/opencv.git```
 
- - Navigate to root folder  
+ - Navigate to root folder.  
 ```cd ~/opencv```
 
  - Create a build directory. Choose a name ("release/", "build/" ...)  
@@ -85,7 +85,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 8 core example:  
 ```cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local .. -j8```
 
- - Install obtained build  
+ - Install obtained build.  
 ```
 make
 sudo make install
@@ -99,8 +99,8 @@ sudo make install
 
 ### Problems?
 If something goes wrong during cv2 installation, you may have installed it in wrong environment such as:
- - Another version of Python: Python 2 / Python 3
- - A temporary virtual environment
- - Anaconda environment
+ - Another version of Python: Python 2 / Python 3.
+ - A temporary virtual environment.
+ - Anaconda environment.
 
 ---
