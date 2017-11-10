@@ -102,3 +102,5 @@ If something goes wrong during cv2 installation, you may have installed it in wr
  - Another version of Python: Python 2 / Python 3
  - A temporary virtual environment
  - Anaconda environment
+
+---
