@@ -90,6 +90,13 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 make
 sudo make install
 ```
+
+### 4. Test installation
+ - Open a console.
+ - Start Python environment by running: ```python```
+ - Test numpy: ```import numpy```
+ - Test opencv: ```import cv2```
+
 ### Problems?
 If something goes wrong during cv2 installation, you may have installed it in wrong environment such as:
  - Another version of Python: Python 2 / Python 3
