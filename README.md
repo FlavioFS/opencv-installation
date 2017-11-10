@@ -23,13 +23,13 @@
 Some examples:  
 32-bit: <opencv_root>/build/python/<version_number_2_or_3>/x86/  
 64-bit: <opencv_root>/build/python/<version_number_2_or_3>/x64/  
- - Copy **cv2.pyd** to Python site-packages subfolder  
-You can find it by open a Python environment at some console and running:  
+ - Copy **cv2.pyd** to **site-packages** subfolder of Python installation directory.  
+You can also find it by running the Python script below:  
 ```
 import site
-site.getsitepackages()
+print site.getsitepackages()
 ```  
-There will probably 2 paths, but the correct is the one that contains several other packages. It is usually located at <python_root>/Lib/site-packages
+There will probably 2 paths, but the correct one is the folder containing several other packages. It is usually located at <python_root>/Lib/site-packages
 
 ### 3. Install Pip
  - Right click [**THIS FILE**](https://bootstrap.pypa.io/get-pip.py) and **Save File As** get-pip.py.
