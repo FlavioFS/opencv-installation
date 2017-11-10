@@ -29,7 +29,7 @@ You can also find it by running the Python script below:
 import site
 print site.getsitepackages()
 ```  
-There will probably 2 paths, but the correct one is the folder containing several other packages. It is usually located at <python_root>/Lib/site-packages
+There will be probably 2 paths, but the correct one is the folder containing several other packages. It is usually located at <python_root>/Lib/site-packages
 
 ### 3. Install Pip
  - Right click [**THIS FILE**](https://bootstrap.pypa.io/get-pip.py) and **Save File As** get-pip.py.
