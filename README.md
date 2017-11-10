@@ -18,7 +18,18 @@
 ### 2. OpenCV
  - Go to [**OPENCV RELEASES PAGE**](https://opencv.org/releases.html) and download preferred version **for Windows**.
  - **Warning**: pre-compiled files for most recent version (3.3) currently are not working!
- - Navigate to opencv root folder (the one with several subfolders and files).
+ - Navigate to <opencv_root> folder (the one with several subfolders and files).
+ - Find the subfolder containing Python build. It may be the 32-bit version or the 64-bit one depending on your system.  
+Some examples:  
+32-bit: <opencv_root>/build/python/<version_number_2_or_3>/x86/  
+64-bit: <opencv_root>/build/python/<version_number_2_or_3>/x64/  
+ - Copy **cv2.pyd** to Python site-packages subfolder  
+You can find it by open a Python environment at some console and running:  
+```
+import site
+site.getsitepackages()
+```  
+There will probably 2 paths, but the correct is the one that contains several other packages. It is usually located at <python_root>/Lib/site-packages
 
 ### 3. Install Pip
  - Right click [**THIS FILE**](https://bootstrap.pypa.io/get-pip.py) and **Save File As** get-pip.py.
