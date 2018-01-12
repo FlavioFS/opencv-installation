@@ -2,22 +2,43 @@
 
 ---
 
-### Last revision
-> 2017 november 10
+## :calendar: Last revision
+> 2018 january 12
 
-### Most Recent OpenCV Version (by this date)
-> 3.3.1
+## :mailbox: Most Recent OpenCV Version (by this date)
+> 3.4.0
 
 ---
 
-## Windows
+## :question: FAQ
+If something goes wrong during cv2 installation, some solution in this section may fit your problem.  
+
+### 1. You have installed OpenCV in another environment.
+Some possible environments are:  
+ - Another version of Python: Python 2 / Python 3.  
+ - A temporary virtual environment.  
+ - Anaconda environment.  
+
+You can solve this by repeating the installation process but assuring the target is the desired environment.
+
+### 2. */tmp* folder is too small. ("No space left on device.")
+Specially if you are running it from an Arch Linux distro (e.g.: Antergos), you may need to remount your */tmp* folder to a larger size. Remember: built OpenCV requires more than 7GB.
+
+Remounting */tmp*:  
+```bash
+sudo mount -o remount,size=20G,noatime /tmp
+```
+
+---
+
+## :computer: Windows
 ### 1. Python
  - Go to [**PYTHON DOWNLOAD PAGE**](https://www.python.org/downloads/release/python-2714/) and search for desired version **at the bottom of page**.
  - **Warning**: DO NOT insta-click on highlighted download button! (it will download the 32-bit version!)
 
 ### 2. OpenCV
  - Go to [**OPENCV RELEASES PAGE**](https://opencv.org/releases.html) and download preferred version **for Windows**.
- - **Warning**: pre-compiled files for most recent version (3.3) currently are not working!
+ - **Warning**: pre-compiled files for version 3.3 currently are not working!
  - Navigate to <opencv_root> folder (the one with several subfolders and files).
  - Find the subfolder containing Python build. It may be the 32-bit version or the 64-bit one depending on your system.  
 Some examples:  
@@ -45,15 +66,9 @@ There will be probably 2 paths, but the correct one is the folder containing sev
  - Test numpy: ```import numpy```
  - Test opencv: ```import cv2```
 
-### Problems?
-If something goes wrong during cv2 installation, you may have installed it in wrong environment such as:  
- - Another version of Python: Python 2 / Python 3.
- - A temporary virtual environment.
- - Anaconda environment.
-
 ---
 
-## Linux
+## :penguin: Linux
 ### 1. Python
 Linux distros are provided with Python installed already. But you may want to update it.
 
@@ -96,11 +111,5 @@ sudo make install
  - Start Python environment by running: ```python```
  - Test numpy: ```import numpy```
  - Test opencv: ```import cv2```
-
-### Problems?
-If something goes wrong during cv2 installation, you may have installed it in wrong environment such as:
- - Another version of Python: Python 2 / Python 3.
- - A temporary virtual environment.
- - Anaconda environment.
 
 ---
