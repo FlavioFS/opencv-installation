@@ -98,7 +98,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 - As this build may take 30 minutes or even 1 hour, you can dedicate all of your cores to this task by adding the flag **-j<number_of_cores>** to the end of previous command.  
 **Warning**: *If you use all of your cores, you probably won't be able to use your PC for another task until the build is finished!*  
 8 core example:  
-```cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local .. -j8```
+```cmake -j8 -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..```
 
  - Install obtained build.  
 ```
