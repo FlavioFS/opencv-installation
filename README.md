@@ -29,6 +29,12 @@ Remounting */tmp*:
 sudo mount -o remount,size=20G,noatime /tmp
 ```
 
+### 3. "opencv windows ImportError: DLL load failed" when importing cv2
+Try installing opencv-contrib-python:
+```bash
+pip install opencv-contrib-python
+```
+
 ---
 
 ## :computer: Windows
